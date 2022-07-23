@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sign_in_page_wrapper {
+  width: 428px;
+  height: 926px;
+  border: 2px solid;
+  margin: auto;
+  border-radius: 40px;
+  background: white;
+  overflow: hidden;
+  header {
+    background: url("./img/header_bg.png") center 0px / contain no-repeat;
+    height: 300px;
+    position: relative;
+    * {
+      color: white;
+    }
+    .top_bar_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.4rem 1.3rem;
+      #bar_time {
+        font-weight: 500;
+        font-size: 15px;
+      }
+      .right_side_bar {
+        & > span {
+          display: inline-block;
+          margin-left: 7px;
+        }
+      }
+    }
+    #back_btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      border: none;
+      background: #e55e76;
+      border-radius: 50%;
+      margin-top: 72px;
+      margin-left: 33.86px;
+      cursor: pointer;
+    }
+  }
+  #sign_in_form {
+    margin-top: -60px;
+    .form_title,
+    .form_group {
+      margin-left: 54px;
+      h2 {
+        font-size: 22px;
+        margin-bottom: 29px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        color: #aaaaaa;
+      }
+    }
+    .form_body {
+      margin-top: 46px;
+      .form_group {
+        margin-right: 79px;
+        margin-bottom: 36px;
+        position: relative;
+        .input_helper {
+          position: absolute;
+          top: 60%;
+          transform: translateY(-50%);
+          left: 8px;
+          &::after {
+            content: "";
+            display: block;
+            height: 23px;
+            position: absolute;
+            border-right: 1px solid #c1c7d0;
+            top: -2px;
+            right: -10px;
+          }
+        }
+      }
+      .form_action {
+        text-align: center;
+        u {
+          font-size: 14px;
+          color: #324a59;
+        }
+        .action_wrapper {
+          margin-left: 37px;
+          margin-right: 33px;
+          margin-top: 62px;
+          .sign_in_btn {
+            width: 100%;
+            padding: 18px 129px;
+            height: 60px;
+            background: #e55e76;
+            color: #fff;
+            box-shadow: 0px 10px 22px rgba(149, 173, 254, 0.3);
+            border-radius: 99px;
+            text-decoration: none;
+            display: block;
+            font-weight: bold;
+          }
+          .drop_line {
+            margin-top: 46px;
+            position: relative;
+            color: #e55e76;
+            &::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 100%;
+              left: 0;
+              height: 0px;
+              border: 1px solid #e55e76;
+            }
+            span {
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              width: 46px;
+              height: 46px;
+              box-shadow: 0 0 0 13px white,
+               0 0 0 2px inset #e55e76;
+              border-radius: 50%;
+              background: white;
+              z-index: 2;
+              position: relative;
+              font-size: 15.6616px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      input {
+        width: 100%;
+        padding: 0.5rem;
+        display: inline-block;
+        border: none;
+        padding-left: 43px;
+        border-bottom: 1px solid #c1c7d0;
+        box-shadow: 0;
+        outline: none;
+        &::placeholder {
+          font-size: 12px;
+          line-height: 18px;
+          /* identical to box height */
+          letter-spacing: -0.2px;
+          color: #c1c7d0;
+        }
+        &#passToggle {
+          padding-right: 2rem;
+        }
+      }
+      .input_right_helper {
+        position: absolute;
+        right: 10px;
+        top: 60%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+    }
+  }
+}
