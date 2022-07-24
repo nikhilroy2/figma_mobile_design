@@ -147,8 +147,20 @@
                                 OR
                             </span>
                         </div>
+
+                        <a href="#" class="social_sign_btn">
+                            <img src="./img/Google-removebg-preview 1.png" alt=""> Login with Gmail
+                        </a>
+                        <a href="#" class="social_sign_btn fb_sign">
+                            <img src="./img/Facebook.png" alt=""> Login with Facebook
+                        </a>
                     </div>
                 </div>
+            </div>
+            <div class="form_footer">
+                <p>
+                    New member? <a href="#">Sign up</a>
+                </p>
             </div>
         </form>
     </div>
@@ -159,7 +171,7 @@
         function barTimeSet() {
             setInterval(() => {
                 let currentTime = new Date().toLocaleTimeString();
-                document.getElementById('bar_time').innerHTML = String(currentTime).slice(0, 4);
+                document.getElementById('bar_time').innerHTML = String(currentTime);
             }, 1000)
         };
 
