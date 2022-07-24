@@ -12,12 +12,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #AB3D50;
 }
 
 .sign_in_page_wrapper {
   width: 428px;
   height: 926px;
-  border: 2px solid;
+  border: 2px solid #fff;
   margin: auto;
   border-radius: 40px;
   background: white;
